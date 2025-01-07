@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c2d7f5;
+            color: #000000;
+        }
+        header {
+            background-color: #201535;
+            color: #95aeef;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        nav a {
+            color: #f0e7e7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .project-card {
+            background-color: #f3f4fe;
+            border: 1px solid #0c0c0c;
+            border-radius: 5px;
+            padding: 1rem;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .project-card h3 {
+            margin-top: 1rem;
+        }
+        .resume {
+            text-align: center;
+        }
+        .resume a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .resume a:hover {
+            background-color: #db9b9b;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background-color:#c2d7f5;
+            color: #fff;
+            border: none;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RICHA LOPES</h1>
+        <nav>
+            <a href="C:\Users\HP\OneDrive\Desktop\RICHA\PS\WELCOME.html">HOME</a>
+            <a href="C:\Users\HP\OneDrive\Desktop\RICHA\PS\Aboutme.html">ABOUT</a>
+            <a href="C:\Users\HP\OneDrive\Desktop\RICHA\PS\SKINCARE.html">PROJECT</a>
+            <a href="C:\Users\HP\OneDrive\Desktop\RICHA\PS\resume.html">RESUME</a>
+            <a href="C:\Users\HP\OneDrive\Desktop\RICHA\PS\contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <h2>WELCOME TO MY PORTFOLIO</h2>
+            <p>My name is Richa Lopes.I am a student at Thakur college of engineering,currently I am pursuring BCA.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>ABOUT ME</h2>
+            <p>I have a background in frontend engineering, specializing in HTML, CSS, and JavaScript. I enjoy crafting user-friendly interfaces and engaging digital experiences.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>PROJECT</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="SKIN.jpg"Project 1>
+                    <h3>Project 1</h3>
+                    <p>Skincare Haven is a comprehensive platform designed to guide individuals on their journey to achieving healthy, glowing skin</p>
+                    <a href="C:\Users\HP\OneDrive\Desktop\RICHA\PS\SKINCARE.html">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section resume">
+            <h2>RESUME</h2>
+            <p>You can download my resume below:</p>
+            <a href="C:\Users\HP\OneDrive\Desktop\RICHA\PS\Screenshot 2025-01-08 031125.png" download>Download Resume</a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>CONTACT</h2>
+            <form action="" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy;All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
